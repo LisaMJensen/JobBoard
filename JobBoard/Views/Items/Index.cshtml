@@ -1,0 +1,13 @@
+<h1>Job Board</h1>
+@using JobBoard.Models
+<div>
+    @foreach(Item item in Model)
+    {
+    @Html.DisplayFor(ModelItem => item.Title)<br>
+    @Html.DisplayFor(ModelItem => item.Description)<br>
+    @Html.DisplayFor(ModelItem => item.Contact_Info)<br>
+    }
+</div>
+<h1>Welcome to the Job Listings!</h1>
+<a href='/items/new'>Add a new listing</a>
+<a href='/items'>See list of job listings</a>
